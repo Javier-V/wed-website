@@ -1,0 +1,291 @@
+doctype html
+head
+  title Gymso Fitness HTML Template
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=Edge')
+  meta(name='description' content='')
+  meta(name='keywords' content='')
+  meta(name='author' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/font-awesome.min.css')
+  link(rel='stylesheet' href='css/aos.css')
+  link(rel='stylesheet' href='css/tooplate-gymso-style.css')
+// MENU BAR
+nav.navbar.navbar-expand-lg.fixed-top
+  .container
+    a#title2.navbar-brand(href='index.html') #{__('Hello')}
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ml-lg-auto
+        li.nav-item
+          a.nav-link.smoothScroll(href='#home') Home
+        li.nav-item
+          a.nav-link.smoothScroll(href='#about') About Us
+        li.nav-item
+          a.nav-link.smoothScroll(href='#class') Classes
+        li.nav-item
+          a.nav-link.smoothScroll(href='#schedule') Schedules
+        li.nav-item
+          a.nav-link.smoothScroll(href='#contact') Contact
+      ul.social-icon.ml-lg-3
+        li
+          a.fa.fa-facebook(href='https://fb.com/tooplate')
+        li
+          a.fa.fa-twitter(href='#')
+        li
+          a.fa.fa-instagram(href='#')
+// HERO
+section#home.hero.d-flex.flex-column.justify-content-center.align-items-center
+  .bg-overlay
+  .container
+    .row
+      .col-lg-8.col-md-10.mx-auto.col-12
+        .hero-text.mt-5.text-center
+          h6(data-aos='fade-up' data-aos-delay='300') new way to build a healthy lifestyle!
+          h1.text-white(data-aos='fade-up' data-aos-delay='500') Upgrade your body at Gymso Fitness
+          a.btn.custom-btn.mt-3(href='#feature' data-aos='fade-up' data-aos-delay='600') Get started
+          a.btn.custom-btn.bordered.mt-3(href='#about' data-aos='fade-up' data-aos-delay='700') learn more
+section#feature.feature
+  .container
+    .row
+      .d-flex.flex-column.justify-content-center.ml-lg-auto.mr-lg-5.col-lg-5.col-md-6.col-12
+        h2.mb-3.text-white(data-aos='fade-up') New to the gymso?
+        h6.mb-4.text-white(data-aos='fade-up') Your membership is up to 2 months FREE ($62.50 per month)
+        p(data-aos='fade-up' data-aos-delay='200')
+          | Gymso is free HTML template by 
+          a(rel='nofollow' href='https://www.tooplate.com' target='_parent') Tooplate
+          |  for your commercial website. Bootstrap v4.2.1 Layout. Feel free to use it.
+        a.btn.custom-btn.bg-color.mt-3(href='#' data-aos='fade-up' data-aos-delay='300' data-toggle='modal' data-target='#membershipForm') Become a member today
+      .mr-lg-auto.mt-3.col-lg-4.col-md-6.col-12
+        .about-working-hours
+          div
+            h2.mb-4.text-white(data-aos='fade-up' data-aos-delay='500') Working hours
+            strong.d-block(data-aos='fade-up' data-aos-delay='600') Sunday : Closed
+            strong.mt-3.d-block(data-aos='fade-up' data-aos-delay='700') Monday - Friday
+            p(data-aos='fade-up' data-aos-delay='800') 7:00 AM - 10:00 PM
+            strong.mt-3.d-block(data-aos='fade-up' data-aos-delay='700') Saturday
+            p(data-aos='fade-up' data-aos-delay='800') 6:00 AM - 4:00 PM
+// ABOUT
+section#about.about.section
+  .container
+    .row
+      .mt-lg-5.mb-lg-0.mb-4.col-lg-5.col-md-10.mx-auto.col-12
+        h2.mb-4(data-aos='fade-up' data-aos-delay='300') Hello, we are Gymso
+        p(data-aos='fade-up' data-aos-delay='400')
+          | You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.
+        p(data-aos='fade-up' data-aos-delay='500')
+          | If you have any question regarding 
+          a(rel='nofollow' href='https://www.tooplate.com/view/2119-gymso-fitness' target='_parent') Gymso Fitness HTML template
+          | , you can 
+          a(rel='nofollow' href='https://www.tooplate.com/contact' target='_parent') contact Tooplate
+          |  immediately. Thank you.
+      .ml-lg-auto.col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='700')
+        .team-thumb
+          img.img-fluid(src='images/team/team-image.jpg' alt='Trainer')
+          .team-info.d-flex.flex-column
+            h3 Mary Yan
+            span Yoga Instructor
+            ul.social-icon.mt-3
+              li
+                a.fa.fa-twitter(href='#')
+              li
+                a.fa.fa-instagram(href='#')
+      .mr-lg-auto.mt-5.mt-lg-0.mt-md-0.col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='800')
+        .team-thumb
+          img.img-fluid(src='images/team/team-image01.jpg' alt='Trainer')
+          .team-info.d-flex.flex-column
+            h3 Catherina
+            span Body trainer
+            ul.social-icon.mt-3
+              li
+                a.fa.fa-instagram(href='#')
+              li
+                a.fa.fa-facebook(href='#')
+// CLASS
+section#class.class.section
+  .container
+    .row
+      .col-lg-12.col-12.text-center.mb-5
+        h6(data-aos='fade-up') Get A Perfect Body
+        h2(data-aos='fade-up' data-aos-delay='200') Our Training Classes
+      .col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='400')
+        .class-thumb
+          img.img-fluid(src='images/class/yoga-class.jpg' alt='Class')
+          .class-info
+            h3.mb-1 Yoga
+            span
+              strong Trained by
+              |  - Bella
+            span.class-price $50
+            p.mt-3 Lorem ipsum dolor sit amet, consectetur adipiscing
+      .mt-5.mt-lg-0.mt-md-0.col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='500')
+        .class-thumb
+          img.img-fluid(src='images/class/crossfit-class.jpg' alt='Class')
+          .class-info
+            h3.mb-1 Areobic
+            span
+              strong Trained by
+              |  - Mary
+            span.class-price $66
+            p.mt-3 Lorem ipsum dolor sit amet, consectetur adipiscing
+      .mt-5.mt-lg-0.col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='600')
+        .class-thumb
+          img.img-fluid(src='images/class/cardio-class.jpg' alt='Class')
+          .class-info
+            h3.mb-1 Cardio
+            span
+              strong Trained by
+              |  - Cathe
+            span.class-price $75
+            p.mt-3 Lorem ipsum dolor sit amet, consectetur adipiscing
+// SCHEDULE
+section#schedule.schedule.section
+  .container
+    .row
+      .col-lg-12.col-12.text-center
+        h6(data-aos='fade-up') our weekly GYM schedules
+        h2.text-white(data-aos='fade-up' data-aos-delay='200') Workout Timetable
+      .col-lg-12.py-5.col-md-12.col-12
+        table.table.table-bordered.table-responsive.schedule-table(data-aos='fade-up' data-aos-delay='300')
+          thead.thead-light
+            th
+              i.fa.fa-calendar
+            th Mon
+            th Tue
+            th Wed
+            th Thu
+            th Fri
+            th Sat
+          tbody
+            tr
+              td
+                small 7:00 am
+              td
+                strong Cardio
+                span 7:00 am - 9:00 am
+              td
+                strong Power Fitness
+                span 7:00 am - 9:00 am
+              td
+              td
+              td
+                strong Yoga Section
+                span 7:00 am - 9:00 am
+            tr
+              td
+                small 9:00 am
+              td
+              td
+              td
+                strong Boxing
+                span 8:00 am - 9:00 am
+              td
+                strong Areobic
+                span 8:00 am - 9:00 am
+              td
+              td
+                strong Cardio
+                span 8:00 am - 9:00 am
+            tr
+              td
+                small 11:00 am
+              td
+              td
+                strong Boxing
+                span 11:00 am - 2:00 pm
+              td
+                strong Areobic
+                span 11:30 am - 3:30 pm
+              td
+              td
+                strong Body work
+                span 11:50 am - 5:20 pm
+            tr
+              td
+                small 2:00 pm
+              td
+                strong Boxing
+                span 2:00 pm - 4:00 pm
+              td
+                strong Power lifting
+                span 3:00 pm - 6:00 pm
+              td
+              td
+                strong Cardio
+                span 6:00 pm - 9:00 pm
+              td
+              td
+                strong Crossfit
+                span 5:00 pm - 7:00 pm
+// CONTACT
+section#contact.contact.section
+  .container
+    .row
+      .ml-auto.col-lg-5.col-md-6.col-12
+        h2.mb-4.pb-2(data-aos='fade-up' data-aos-delay='200') Feel free to ask anything
+        form.contact-form.webform(action='#' method='post' data-aos='fade-up' data-aos-delay='400' role='form')
+          input.form-control(type='text' name='cf-name' placeholder='Name')
+          input.form-control(type='email' name='cf-email' placeholder='Email')
+          textarea.form-control(rows='5' name='cf-message' placeholder='Message')
+          button#submit-button.form-control(type='submit' name='submit') Send Message
+      .mx-auto.mt-4.mt-lg-0.mt-md-0.col-lg-5.col-md-6.col-12
+        h2.mb-4(data-aos='fade-up' data-aos-delay='600')
+          | Where you can 
+          span find us
+        p(data-aos='fade-up' data-aos-delay='800')
+          i.fa.fa-map-marker.mr-1
+          |  120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil
+        //
+          How to change your own map point
+          1. Go to Google Maps
+          2. Click on your location point
+          3. Click "Share" and choose "Embed map" tab
+          4. Copy only URL and paste it within the src="" field below
+        .google-map(data-aos='fade-up' data-aos-delay='900')
+          iframe(src='https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed' width='1920' height='250' frameborder='0' style='border:0;' allowfullscreen='')
+// FOOTER
+footer.site-footer
+  .container
+    .row
+      .ml-auto.col-lg-4.col-md-5
+        p.copyright-text
+          | Copyright &copy; 2020 Gymso Fitness Co.
+          br
+          | Design: 
+          a(href='https://www.tooplate.com') Tooplate
+      .d-flex.justify-content-center.mx-auto.col-lg-5.col-md-7.col-12
+        p.mr-4
+          i.fa.fa-envelope-o.mr-1
+          a(href='#') hello@company.co
+        p
+          i.fa.fa-phone.mr-1
+          |  010-020-0840
+// Modal
+#membershipForm.modal.fade(tabindex='-1' role='dialog' aria-labelledby='membershipFormLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h2#membershipFormLabel.modal-title Membership Form
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        form.membership-form.webform(role='form')
+          input.form-control(type='text' name='cf-name' placeholder='John Doe')
+          input.form-control(type='email' name='cf-email' placeholder='Johndoe@gmail.com')
+          input.form-control(type='tel' name='cf-phone' placeholder='123-456-7890' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' required='')
+          textarea.form-control(rows='3' name='cf-message' placeholder='Additional Message')
+          button#submit-button.form-control(type='submit' name='submit') Submit Button
+          .custom-control.custom-checkbox
+            input#signup-agree.custom-control-input(type='checkbox')
+            label.custom-control-label.text-small.text-muted(for='signup-agree')
+              | I agree to the 
+              a(href='#') Terms &amp;Conditions
+      .modal-footer
+// SCRIPTS
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/aos.js')
+script(src='js/smoothscroll.js')
+script(src='js/custom.js')
