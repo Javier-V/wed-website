@@ -14,7 +14,9 @@ var i18n = require('i18n');
 app.use(i18n.init);
 i18n.configure({
   locales: ['es', 'pl', 'en'],
-  directory: path.join(__dirname, '/locales')
+  directory: path.join(__dirname, '/locales'),
+  defaultLocale: 'es',
+  queryParameter: 'lang',
 })
 
 
@@ -46,7 +48,5 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-i18n.setLocale('es');
 
 module.exports = app;
