@@ -1,3 +1,8 @@
 {
-	"Hello": "Hello ESP"
+	"Hello": "Hello ESP",
+	"Directions_title": "Cómo llegar",
+	"ThePlace_title": "El sitio",
+	"Staying_title": "Alojamiento",
+	"Presents_title": "Regalos",
+	"Cover_title": "Cover_title"
 }
