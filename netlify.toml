@@ -1,5 +1,0 @@
-[[redirects]]
-from = "/"
-to = "https://wed-website.herokuapp.com"
-status = 200
-force = true
