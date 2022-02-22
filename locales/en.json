@@ -1,7 +1,11 @@
 {
 	"Hello": "Hello ENG",
-	"Directions_title": "Directions_title",
-	"ThePlace_title": "ThePlace_title",
-	"Staying_title": "Staying_title",
-	"Presents_title": "Presents_title"
+	"Directions_title": "Directions",
+	"ThePlace_title": "The Place",
+	"Staying_title": "Staying in Łódź",
+	"Presents_title": "Presents",
+	"Cover_title": "Our wedding",
+	"Web_title": "Our Wedding",
+	"Home": "Home",
+	"Translations_title": "Little dictionary"
 }
