@@ -23,13 +23,13 @@ nav.navbar.navbar-expand-lg.fixed-top
         li.nav-item
           a.nav-link.smoothScroll(href='#home') #{__('Home')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#contact') #{__('Directions_title')}
+          a.nav-link.smoothScroll(href='#contact') #{__('Location')}
         li.nav-item
           a.nav-link.smoothScroll(href='#class') #{__('Staying_title')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#schedule') #{__('Schedule_title')}
+          a.nav-link.smoothScroll(href='#schedule') #{__('Schedule')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#about') #{__('FAQ_title')}
+          a.nav-link.smoothScroll(href='#about') #{__('FAQ')}
       ul.social-icon.ml-lg-3
         li
           a.fa.fa-twitter(href='?lang=es')
@@ -106,13 +106,13 @@ section#class.class.section
   .container
     .row
       .col-lg-12.col-12.text-center.mb-5
-        h6(data-aos='fade-up') Get A Perfect Body
-        h2(data-aos='fade-up' data-aos-delay='200') Our Training Classes
+        //- h6(data-aos='fade-up') Get A Perfect Body
+        h2(data-aos='fade-up' data-aos-delay='200') #{__('Hotels nearby')}
       .col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='400')
         .class-thumb
-          img.img-fluid(src='images/class/yoga-class.jpg' alt='Class')
+          img.img-fluid(src='images/doubleTree.jpg' alt='DoubleTree by Hilton Lodz' onClick={} href='https://www.hilton.com/en/hotels/lcjdldi-doubletree-lodz/')
           .class-info
-            h3.mb-1 Yoga
+            h3.mb-1 DoubleTree by Hilton Lodz
             span
               strong Trained by
               |  - Bella
@@ -157,7 +157,6 @@ section#schedule.schedule.section
                 small 17:00
               td
                 strong #{__('Ceremony and Wishes')}
-                span 17:00 - 17:50
               
             tr
               td
@@ -170,7 +169,6 @@ section#schedule.schedule.section
                 small 18:00
               td
                 strong #{__('Lunch')}
-                span 18:00 - 19:30
               
             tr
               td
@@ -183,6 +181,7 @@ section#schedule.schedule.section
                 small 22:30
               td 
                 strong #{__('Wedding dish surprise')}
+                span #{__('Delicious')}
 
             tr
               td 
@@ -206,26 +205,21 @@ section#schedule.schedule.section
 section#contact.contact.section
   .container
     .row
-      .ml-auto.col-lg-5.col-md-6.col-12
-        h2.mb-4.pb-2(data-aos='fade-up' data-aos-delay='200') Feel free to ask anything
-        form.contact-form.webform(action='#' method='post' data-aos='fade-up' data-aos-delay='400' role='form')
-          input.form-control(type='text' name='cf-name' placeholder='Name')
-          input.form-control(type='email' name='cf-email' placeholder='Email')
-          textarea.form-control(rows='5' name='cf-message' placeholder='Message')
-          button#submit-button.form-control(type='submit' name='submit') Send Message
-      .mx-auto.mt-4.mt-lg-0.mt-md-0.col-lg-5.col-md-6.col-12
+      //- .ml-auto.col-lg-5.col-md-6.col-12
+      //-   h2.mb-4.pb-2(data-aos='fade-up' data-aos-delay='200') #{__('Feel free to ask anything')}
+      //-   form.contact-form.webform(action='#' method='post' data-aos='fade-up' data-aos-delay='400' role='form')
+      //-     input.form-control(type='text' name='cf-name' placeholder='Name')
+      //-     input.form-control(type='email' name='cf-email' placeholder='Email')
+      //-     textarea.form-control(rows='5' name='cf-message' placeholder='Message')
+      //-     button#submit-button.form-control(type='submit' name='submit') 
+      .mx-auto.mt-4.mt-lg-0.mt-md-0.col-lg-12.col-md-12.col-12
         h2.mb-4(data-aos='fade-up' data-aos-delay='600')
-          | Where you can 
-          span find us
+          |#{__('The location')}
         p(data-aos='fade-up' data-aos-delay='800')
           i.fa.fa-map-marker.mr-1
           |  Krzemieniecka 2A, Łódź, Poland
-        //
-          How to change your own map point
-          1. Go to Google Maps
-          2. Click on your location point
-          3. Click "Share" and choose "Embed map" tab
-          4. Copy only URL and paste it within the src="" field below
+        p(data-aos='fade-up' data-aos-delay='900')
+          i.mr-1 #{__('There is a private parking in the building')}
         .google-map(data-aos='fade-up' data-aos-delay='900')
           iframe(src='https://maps.google.com/maps?q=Krzemieniecka+2A,+90-001+%C5%81%C3%B3d%C5%BA,+Poland&t=&z=13&ie=UTF8&iwloc=&output=embed' width='1920' height='250' frameborder='0' style='border:0;' allowfullscreen='')
 //- FOOTER
