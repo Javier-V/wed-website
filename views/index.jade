@@ -15,7 +15,7 @@ head
 //- MENU BAR
 nav.navbar.navbar-expand-lg.fixed-top
   .container
-    a#title2.navbar-brand(href='index.html') #{__('Web_title')}
+    a#title2.navbar-brand(href='#home') #{__('Web_title')}
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #navbarNav.collapse.navbar-collapse
@@ -150,73 +150,58 @@ section#schedule.schedule.section
           thead.thead-light
             th
               i.fa.fa-calendar
-            th Mon
-            th Tue
-            th Wed
-            th Thu
-            th Fri
-            th Sat
+            th
           tbody
             tr
               td
-                small 7:00 am
+                small 17:00
               td
-                strong Cardio
-                span 7:00 am - 9:00 am
-              td
-                strong Power Fitness
-                span 7:00 am - 9:00 am
-              td
-              td
-              td
-                strong Yoga Section
-                span 7:00 am - 9:00 am
+                strong #{__('Ceremony and Wishes')}
+                span 17:00 - 17:50
+              
             tr
               td
-                small 9:00 am
+                small 17:50
               td
-              td
-              td
-                strong Boxing
-                span 8:00 am - 9:00 am
-              td
-                strong Areobic
-                span 8:00 am - 9:00 am
-              td
-              td
-                strong Cardio
-                span 8:00 am - 9:00 am
+                strong #{__('Speeches')}
+              
             tr
               td
-                small 11:00 am
+                small 18:00
               td
-              td
-                strong Boxing
-                span 11:00 am - 2:00 pm
-              td
-                strong Areobic
-                span 11:30 am - 3:30 pm
-              td
-              td
-                strong Body work
-                span 11:50 am - 5:20 pm
+                strong #{__('Lunch')}
+                span 18:00 - 19:30
+              
             tr
               td
-                small 2:00 pm
+                small 19:30
               td
-                strong Boxing
-                span 2:00 pm - 4:00 pm
-              td
-                strong Power lifting
-                span 3:00 pm - 6:00 pm
-              td
-              td
-                strong Cardio
-                span 6:00 pm - 9:00 pm
-              td
-              td
-                strong Crossfit
-                span 5:00 pm - 7:00 pm
+                strong #{__('First Dance')}
+
+            tr
+              td 
+                small 22:30
+              td 
+                strong #{__('Wedding dish surprise')}
+
+            tr
+              td 
+                small 00:00
+              td 
+                strong #{__('Wedding cake')}
+
+            tr
+              td 
+                small 02:00
+              td 
+                strong #{__('Late Dinner 1')}
+
+            tr
+              td 
+                small 04:30
+              td 
+                strong #{__('Late Dinner 2')}
+              
 //- CONTACT
 section#contact.contact.section
   .container
