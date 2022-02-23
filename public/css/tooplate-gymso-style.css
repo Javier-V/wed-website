@@ -216,26 +216,6 @@
 
 
   /*---------------------------------------
-     MODAL              
-  -----------------------------------------*/
-
-  .modal-content {
-    padding: 2rem 3rem;
-  }
-
-  .modal-header,
-  .modal-body,
-  .modal-footer {
-    border: 0;
-    padding: 0;
-  }
-
-  .membership-form a {
-    color: var(--primary-color);
-  }
-
-
-  /*---------------------------------------
     FEATURE          
   -----------------------------------------*/
 
@@ -517,9 +497,6 @@
   -----------------------------------------*/
 
   .webform input,
-  button#submit-button {
-    height: calc(2.25rem + 20px);
-  }
 
   .form-control {
     border-radius: var(--border-radius-small);
@@ -529,18 +506,6 @@
   .form-control:focus {
     box-shadow: none;
     border-color: var(--dark-color);
-  }
-
-  button#submit-button {
-    background: var(--dark-color);
-    border-color: transparent;
-    color: var(--white-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  button#submit-button:hover {
-    background: var(--primary-color);
   }
 
   .contact h2 + p {
