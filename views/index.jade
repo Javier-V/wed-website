@@ -37,7 +37,8 @@ nav.navbar.navbar-expand-lg.fixed-top
         li
           a(href='?lang=es')
             img(src='images/es.svg' width='24px' height='24px')
-//- HERO
+
+//- HOME
 section#home.hero.d-flex.flex-column.justify-content-center.align-items-center
   .bg-overlay
   .container
@@ -47,62 +48,22 @@ section#home.hero.d-flex.flex-column.justify-content-center.align-items-center
           h1.text-white(data-aos='fade-up' data-aos-delay='500') #{__('Cover_title')}
           a.btn.custom-btn.mt-3(href='#schedule' data-aos='fade-up' data-aos-delay='600')  #{__('When')}
           a.btn.custom-btn.bordered.mt-3(href='#location' data-aos='fade-up' data-aos-delay='700') #{__('Where')}
-section#feature.feature
+
+//- LOCATION
+section#location.contact.section
   .container
     .row
-      .d-flex.flex-column.justify-content-center.ml-lg-auto.mr-lg-5.col-lg-5.col-md-6.col-12
-        h2.mb-3.text-white(data-aos='fade-up') New to the gymso?
-        h6.mb-4.text-white(data-aos='fade-up') Your membership is up to 2 months FREE ($62.50 per month)
-        p(data-aos='fade-up' data-aos-delay='200')
-          | Gymso is free HTML template by 
-          a(rel='nofollow' href='https://www.tooplate.com' target='_parent') Tooplate
-          |  for your commercial website. Bootstrap v4.2.1 Layout. Feel free to use it.
-        a.btn.custom-btn.bg-color.mt-3(href='#' data-aos='fade-up' data-aos-delay='300' data-toggle='modal' data-target='#membershipForm') Become a member today
-      .mr-lg-auto.mt-3.col-lg-4.col-md-6.col-12
-        .about-working-hours
-          div
-            h2.mb-4.text-white(data-aos='fade-up' data-aos-delay='500') Working hours
-            strong.d-block(data-aos='fade-up' data-aos-delay='600') Sunday : Closed
-            strong.mt-3.d-block(data-aos='fade-up' data-aos-delay='700') Monday - Friday
-            p(data-aos='fade-up' data-aos-delay='800') 7:00 AM - 10:00 PM
-            strong.mt-3.d-block(data-aos='fade-up' data-aos-delay='700') Saturday
-            p(data-aos='fade-up' data-aos-delay='800') 6:00 AM - 4:00 PM
-//- FAQ
-section#faq.about.section
-  .container
-    .row
-      .mt-lg-5.mb-lg-0.mb-4.col-lg-5.col-md-10.mx-auto.col-12
-        h2.mb-4(data-aos='fade-up' data-aos-delay='300') Hello, we are Gymso
-        p(data-aos='fade-up' data-aos-delay='400')
-          | You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.
-        p(data-aos='fade-up' data-aos-delay='500')
-          | If you have any question regarding 
-          a(rel='nofollow' href='https://www.tooplate.com/view/2119-gymso-fitness' target='_parent') Gymso Fitness HTML template
-          | , you can 
-          a(rel='nofollow' href='https://www.tooplate.com/contact' target='_parent') contact Tooplate
-          |  immediately. Thank you.
-      .ml-lg-auto.col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='700')
-        .team-thumb
-          img.img-fluid(src='images/team/team-image.jpg' alt='Trainer')
-          .team-info.d-flex.flex-column
-            h3 Mary Yan
-            span Yoga Instructor
-            ul.social-icon.mt-3
-              li
-                a.fa.fa-twitter(href='#')
-              li
-                a.fa.fa-instagram(href='#')
-      .mr-lg-auto.mt-5.mt-lg-0.mt-md-0.col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='800')
-        .team-thumb
-          img.img-fluid(src='images/team/team-image01.jpg' alt='Trainer')
-          .team-info.d-flex.flex-column
-            h3 Catherina
-            span Body trainer
-            ul.social-icon.mt-3
-              li
-                a.fa.fa-instagram(href='#')
-              li
-                a.fa.fa-facebook(href='#')
+      .mx-auto.mt-4.mt-lg-0.mt-md-0.col-lg-12.col-md-12.col-12
+        h2.mb-4(data-aos='fade-up' data-aos-delay='600')
+          |#{__('The location')}
+        p(data-aos='fade-up' data-aos-delay='800')
+          i.fa.fa-map-marker.mr-1
+          |  Krzemieniecka 2A, Łódź, Poland
+        p(data-aos='fade-up' data-aos-delay='900')
+          i.mr-1 #{__('There is a private parking in the building')}
+        .google-map(data-aos='fade-up' data-aos-delay='900')
+          iframe(src='https://maps.google.com/maps?q=Krzemieniecka+2A,+90-001+%C5%81%C3%B3d%C5%BA,+Poland&t=&z=13&ie=UTF8&iwloc=&output=embed' width='1920' height='250' frameborder='0' style='border:0;' allowfullscreen='')
+
 //- STAYING
 section#staying.class.section
   .container
@@ -194,20 +155,44 @@ section#schedule.schedule.section
                 small 04:30
               td 
                 strong #{__('Late Dinner 2')}            
-//- LOCATION
-section#location.contact.section
+
+//- FAQ
+section#faq.about.section
   .container
     .row
-      .mx-auto.mt-4.mt-lg-0.mt-md-0.col-lg-12.col-md-12.col-12
-        h2.mb-4(data-aos='fade-up' data-aos-delay='600')
-          |#{__('The location')}
-        p(data-aos='fade-up' data-aos-delay='800')
-          i.fa.fa-map-marker.mr-1
-          |  Krzemieniecka 2A, Łódź, Poland
-        p(data-aos='fade-up' data-aos-delay='900')
-          i.mr-1 #{__('There is a private parking in the building')}
-        .google-map(data-aos='fade-up' data-aos-delay='900')
-          iframe(src='https://maps.google.com/maps?q=Krzemieniecka+2A,+90-001+%C5%81%C3%B3d%C5%BA,+Poland&t=&z=13&ie=UTF8&iwloc=&output=embed' width='1920' height='250' frameborder='0' style='border:0;' allowfullscreen='')
+      .mt-lg-5.mb-lg-0.mb-4.col-lg-5.col-md-10.mx-auto.col-12
+        h2.mb-4(data-aos='fade-up' data-aos-delay='300') Hello, we are Gymso
+        p(data-aos='fade-up' data-aos-delay='400')
+          | You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.
+        p(data-aos='fade-up' data-aos-delay='500')
+          | If you have any question regarding 
+          a(rel='nofollow' href='https://www.tooplate.com/view/2119-gymso-fitness' target='_parent') Gymso Fitness HTML template
+          | , you can 
+          a(rel='nofollow' href='https://www.tooplate.com/contact' target='_parent') contact Tooplate
+          |  immediately. Thank you.
+      .ml-lg-auto.col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='700')
+        .team-thumb
+          img.img-fluid(src='images/team/team-image.jpg' alt='Trainer')
+          .team-info.d-flex.flex-column
+            h3 Mary Yan
+            span Yoga Instructor
+            ul.social-icon.mt-3
+              li
+                a.fa.fa-twitter(href='#')
+              li
+                a.fa.fa-instagram(href='#')
+      .mr-lg-auto.mt-5.mt-lg-0.mt-md-0.col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='800')
+        .team-thumb
+          img.img-fluid(src='images/team/team-image01.jpg' alt='Trainer')
+          .team-info.d-flex.flex-column
+            h3 Catherina
+            span Body trainer
+            ul.social-icon.mt-3
+              li
+                a.fa.fa-instagram(href='#')
+              li
+                a.fa.fa-facebook(href='#')
+
 //- FOOTER
 footer.site-footer
   .container
