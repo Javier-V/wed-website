@@ -119,24 +119,19 @@ section#staying.class.section
             span.class-price $$$
       .mt-5.mt-lg-0.mt-md-0.col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='500')
         .class-thumb
-          img.img-fluid(src='images/class/crossfit-class.jpg' alt='Class')
+          a(href='https://www.hilton.com/en/hotels/lcjdldi-doubletree-lodz/' target='_blank')
+            img.img-fluid(src='images/doubleTree.jpg' alt='DoubleTree by Hilton Lodz')
           .class-info
-            h3.mb-1 Areobic
-            span
-              strong Trained by
-              |  - Mary
-            span.class-price $66
-            p.mt-3 Lorem ipsum dolor sit amet, consectetur adipiscing
+            h3.mb-1 DoubleTree Hilton
+            span.class-price $$$
+            
       .mt-5.mt-lg-0.col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='600')
         .class-thumb
-          img.img-fluid(src='images/class/cardio-class.jpg' alt='Class')
+          a(href='https://www.hilton.com/en/hotels/lcjdldi-doubletree-lodz/' target='_blank')
+            img.img-fluid(src='images/doubleTree.jpg' alt='DoubleTree by Hilton Lodz')
           .class-info
-            h3.mb-1 Cardio
-            span
-              strong Trained by
-              |  - Cathe
-            span.class-price $75
-            p.mt-3 Lorem ipsum dolor sit amet, consectetur adipiscing
+            h3.mb-1 DoubleTree Hilton
+            span.class-price $$$
 //- SCHEDULE
 section#schedule.schedule.section
   .container
@@ -198,8 +193,7 @@ section#schedule.schedule.section
               td 
                 small 04:30
               td 
-                strong #{__('Late Dinner 2')}
-              
+                strong #{__('Late Dinner 2')}            
 //- LOCATION
 section#location.contact.section
   .container
@@ -228,27 +222,6 @@ footer.site-footer
         p.mr-4
           i.fa.fa-envelope-o.mr-1
           a(href='#') karola.javi.wedding@gmail.com
-//- Modal
-#membershipForm.modal.fade(tabindex='-1' role='dialog' aria-labelledby='membershipFormLabel' aria-hidden='true')
-  .modal-dialog(role='document')
-    .modal-content
-      .modal-header
-        h2#membershipFormLabel.modal-title Membership Form
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        form.membership-form.webform(role='form')
-          input.form-control(type='text' name='cf-name' placeholder='John Doe')
-          input.form-control(type='email' name='cf-email' placeholder='Johndoe@gmail.com')
-          input.form-control(type='tel' name='cf-phone' placeholder='123-456-7890' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' required='')
-          textarea.form-control(rows='3' name='cf-message' placeholder='Additional Message')
-          button#submit-button.form-control(type='submit' name='submit') Submit Button
-          .custom-control.custom-checkbox
-            input#signup-agree.custom-control-input(type='checkbox')
-            label.custom-control-label.text-small.text-muted(for='signup-agree')
-              | I agree to the 
-              a(href='#') Terms &amp;Conditions
-      .modal-footer
 // SCRIPTS
 script(src='js/jquery.min.js')
 script(src='js/bootstrap.min.js')
