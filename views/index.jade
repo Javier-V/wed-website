@@ -23,18 +23,20 @@ nav.navbar.navbar-expand-lg.fixed-top
         li.nav-item
           a.nav-link.smoothScroll(href='#home') #{__('Home')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#contact') #{__('Location')}
+          a.nav-link.smoothScroll(href='#location') #{__('Location')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#class') #{__('Staying_title')}
+          a.nav-link.smoothScroll(href='#staying') #{__('Staying_title')}
         li.nav-item
           a.nav-link.smoothScroll(href='#schedule') #{__('Schedule')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#about') #{__('FAQ')}
+          a.nav-link.smoothScroll(href='#faq') #{__('FAQ')}
       ul.social-icon.ml-lg-3
         li
-          a.fa.fa-twitter(href='?lang=es')
+          a(href='?lang=pl')
+            img(src='images/pl.svg' width='24px' height='24px')
         li
-          a.fa.fa-instagram(href='?lang=pl')
+          a(href='?lang=es')
+            img(src='images/es.svg' width='24px' height='24px')
 //- HERO
 section#home.hero.d-flex.flex-column.justify-content-center.align-items-center
   .bg-overlay
@@ -44,7 +46,7 @@ section#home.hero.d-flex.flex-column.justify-content-center.align-items-center
         .hero-text.mt-5.text-center
           h1.text-white(data-aos='fade-up' data-aos-delay='500') #{__('Cover_title')}
           a.btn.custom-btn.mt-3(href='#schedule' data-aos='fade-up' data-aos-delay='600')  #{__('When')}
-          a.btn.custom-btn.bordered.mt-3(href='#contact' data-aos='fade-up' data-aos-delay='700') #{__('Where')}
+          a.btn.custom-btn.bordered.mt-3(href='#location' data-aos='fade-up' data-aos-delay='700') #{__('Where')}
 section#feature.feature
   .container
     .row
@@ -65,8 +67,8 @@ section#feature.feature
             p(data-aos='fade-up' data-aos-delay='800') 7:00 AM - 10:00 PM
             strong.mt-3.d-block(data-aos='fade-up' data-aos-delay='700') Saturday
             p(data-aos='fade-up' data-aos-delay='800') 6:00 AM - 4:00 PM
-//- ABOUT
-section#about.about.section
+//- FAQ
+section#faq.about.section
   .container
     .row
       .mt-lg-5.mb-lg-0.mb-4.col-lg-5.col-md-10.mx-auto.col-12
@@ -101,8 +103,8 @@ section#about.about.section
                 a.fa.fa-instagram(href='#')
               li
                 a.fa.fa-facebook(href='#')
-//- CLASS
-section#class.class.section
+//- STAYING
+section#staying.class.section
   .container
     .row
       .col-lg-12.col-12.text-center.mb-5
@@ -198,17 +200,10 @@ section#schedule.schedule.section
               td 
                 strong #{__('Late Dinner 2')}
               
-//- CONTACT
-section#contact.contact.section
+//- LOCATION
+section#location.contact.section
   .container
     .row
-      //- .ml-auto.col-lg-5.col-md-6.col-12
-      //-   h2.mb-4.pb-2(data-aos='fade-up' data-aos-delay='200') #{__('Feel free to ask anything')}
-      //-   form.contact-form.webform(action='#' method='post' data-aos='fade-up' data-aos-delay='400' role='form')
-      //-     input.form-control(type='text' name='cf-name' placeholder='Name')
-      //-     input.form-control(type='email' name='cf-email' placeholder='Email')
-      //-     textarea.form-control(rows='5' name='cf-message' placeholder='Message')
-      //-     button#submit-button.form-control(type='submit' name='submit') 
       .mx-auto.mt-4.mt-lg-0.mt-md-0.col-lg-12.col-md-12.col-12
         h2.mb-4(data-aos='fade-up' data-aos-delay='600')
           |#{__('The location')}
