@@ -1,6 +1,6 @@
 doctype html
 head
-  title #{__('Web_title')}
+  title Our Wedding!
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=Edge')
   meta(name='description' content='')
@@ -15,7 +15,7 @@ head
 //- MENU BAR
 nav.navbar.navbar-expand-lg.fixed-top
   .container
-    a#title2.navbar-brand(href='#home') #{__('Web_title')}
+    a#title2.navbar-brand(href='#home') #{__('Our Wedding')}
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #navbarNav.collapse.navbar-collapse
@@ -25,7 +25,7 @@ nav.navbar.navbar-expand-lg.fixed-top
         li.nav-item
           a.nav-link.smoothScroll(href='#location') #{__('Location')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#staying') #{__('Staying_title')}
+          a.nav-link.smoothScroll(href='#staying') #{__('Staying in Lodz')}
         li.nav-item
           a.nav-link.smoothScroll(href='#schedule') #{__('Schedule')}
         li.nav-item
@@ -45,7 +45,7 @@ section#home.hero.d-flex.flex-column.justify-content-center.align-items-center
     .row
       .col-lg-8.col-md-10.mx-auto.col-12
         .hero-text.mt-5.text-center
-          h1.text-white(data-aos='fade-up' data-aos-delay='500') #{__('Cover_title')}
+          h1.text-white(data-aos='fade-up' data-aos-delay='500') #{__('We are getting married!')}
           a.btn.custom-btn.mt-3(href='#schedule' data-aos='fade-up' data-aos-delay='600')  #{__('When')}
           a.btn.custom-btn.bordered.mt-3(href='#location' data-aos='fade-up' data-aos-delay='700') #{__('Where')}
 
@@ -98,8 +98,8 @@ section#schedule.schedule.section
   .container
     .row
       .col-lg-12.col-12.text-center
-        h6(data-aos='fade-up') #{__('schedule_description1')}
-        h2.text-white(data-aos='fade-up' data-aos-delay='200') #{__('schedule_description2')}
+        h6(data-aos='fade-up') #{__('It will happen on September 3rd 2022')}
+        h2.text-white(data-aos='fade-up' data-aos-delay='200') #{__('Party plan')}
       .col-lg-12.py-5.col-md-12.col-12
         table.table.table-bordered.table-responsive.schedule-table(data-aos='fade-up' data-aos-delay='300')
           thead.thead-light
