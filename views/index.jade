@@ -29,7 +29,10 @@ nav.navbar.navbar-expand-lg.fixed-top
         li.nav-item
           a.nav-link.smoothScroll(href='#schedule') #{__('Schedule')}
         li.nav-item
-          a.nav-link.smoothScroll(href='#faq') #{__('FAQ')}
+          a.nav-link.smoothScroll(href='#presents') #{__('Presents List')}
+        li.nav-item
+          a.nav-link.smoothScroll(href='#dictionary') #{__('Dictionary')}
+
       ul.social-icon.ml-lg-3
         li
           a(href='?lang=pl')
@@ -85,14 +88,14 @@ section#staying.class.section
           .class-info
             h3.mb-1 B&B Hotel Łódź
             span.class-price $$
-            
+
       .mt-5.mt-lg-0.col-lg-4.col-md-6.col-12(data-aos='fade-up' data-aos-delay='600')
         .class-thumb
-          a(href='https://www.hilton.com/en/hotels/lcjdldi-doubletree-lodz/' target='_blank')
-            img.img-fluid(src='images/doubleTree.jpg' alt='DoubleTree by Hilton Lodz')
+          a(href='https://hoteltobaco.pl/en/' target='_blank')
+            img.img-fluid(src='images/hotelTobaco.jpg' alt='Very close to the wedding')
           .class-info
-            h3.mb-1 DoubleTree Hilton
-            span.class-price $$$
+            h3.mb-1 Hotel Tobaco
+            span.class-price $$
 //- SCHEDULE
 section#schedule.schedule.section
   .container
@@ -112,19 +115,19 @@ section#schedule.schedule.section
                 small 17:00
               td
                 strong #{__('Ceremony and Wishes')}
-              
+
             tr
               td
                 small 17:55
               td
                 strong #{__('Speeches')}
-              
+
             tr
               td
                 small 18:00
               td
                 strong #{__('Lunch')}
-              
+
             tr
               td
                 small 19:30
@@ -156,40 +159,43 @@ section#schedule.schedule.section
               td 
                 strong #{__('Late Dinner 2')}            
 
-//- FAQ
-section#faq.about.section
+//- PRESENTS
+section#presents.about.section
   .container
     .row
       .mt-lg-5.mb-lg-0.mb-4.col-lg-8.col-md-2.mx-auto.col-2
-        h2.mb-4(data-aos='fade-up' data-aos-delay='300') #{__('Frequently Answer Questions')}
-        p(data-aos='fade-up' data-aos-delay='500').h3 #{__('Question 1')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Answer 1')}
-        p(data-aos='fade-up' data-aos-delay='500').h3 #{__('Present List')}
+        h2.mb-4(data-aos='fade-up' data-aos-delay='300') #{__('Presents List')}
         p(data-aos='fade-up' data-aos-delay='500')
           img.img-fluid(src='images/presents.jpg')
 
-        p(data-aos='fade-up' data-aos-delay='500').h3 #{__('Little dictionary')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('dzień dobry – buenos dias ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('dobry wieczór – buenas tardes  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('dobranoc – buenas noches  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('cześć – hola (fonetycznie - ola) ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('do zobaczenia – hasta luego (fonetycznie - asta luego) ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('dziękuję – gracias ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('nie ma za co - de nada  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('proszę – por favor ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('przepraszam – lo siento ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('tak / nie – sì / no ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('nie wiem – no lo sé  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('nie rozumiem – No entiendo  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Jak masz na imię? Jak się nazywasz? – ¿Como te llamas? (fonetycznie – komo te jamas) ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Mam na imię… – Me llamao… (fonetycznie - me jamo) ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Jak to się nazywa? - ¿Cómo se llama? (fonetycznie – komo se jama) ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Czy mogę zrobić sobie zdjęcie z Tobą? – ¿Puedo tomar foto contigo? ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Czy możesz nam zrobić zdjęcie? – ¿Puedes tomarnos una foto?  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Napij się ze mną – ¡Bebe conmigo! ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Ze mną się nie napijesz?! -¿No vas a beber conmigo?  ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Gdzie jest toaleta – ¿Donde está el baño? (fonetycznie – donde esta el banjo) ')}
-        p(data-aos='fade-up' data-aos-delay='500') #{__('Zatańczymy? – ¿Bailamos?  ')}
+//- Dictionary
+section#dictionary.about.section
+  .container
+    .row
+      .mt-lg-5.mb-lg-0.mb-4.col-lg-8.col-md-2.mx-auto.col-2
+        h2.mb-4(data-aos='fade-up' data-aos-delay='300') #{__('Little dictionary')}
+
+        p(data-aos='fade-up' data-aos-delay='400') #{__('dzień dobry – buenos dias ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('dobry wieczór – buenas tardes  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('dobranoc – buenas noches  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('cześć – hola (fonetycznie - ola) ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('do zobaczenia – hasta luego (fonetycznie - asta luego) ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('dziękuję – gracias ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('nie ma za co - de nada  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('proszę – por favor ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('przepraszam – lo siento ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('tak / nie – sì / no ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('nie wiem – no lo sé  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('nie rozumiem – No entiendo  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Jak masz na imię? Jak się nazywasz? – ¿Como te llamas? (fonetycznie – komo te jamas) ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Mam na imię… – Me llamao… (fonetycznie - me jamo) ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Jak to się nazywa? - ¿Cómo se llama? (fonetycznie – komo se jama) ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Czy mogę zrobić sobie zdjęcie z Tobą? – ¿Puedo tomar foto contigo? ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Czy możesz nam zrobić zdjęcie? – ¿Puedes tomarnos una foto?  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Napij się ze mną – ¡Bebe conmigo! ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Ze mną się nie napijesz?! -¿No vas a beber conmigo?  ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Gdzie jest toaleta – ¿Donde está el baño? (fonetycznie – donde esta el banjo) ')}
+        p(data-aos='fade-up' data-aos-delay='400') #{__('Zatańczymy? – ¿Bailamos?  ')}
 
 //- FOOTER
 footer.site-footer
